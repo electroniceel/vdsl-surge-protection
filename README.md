@@ -42,8 +42,12 @@ Schematics
 Theory of Operation
 -------------------
 
+### Surges
+
 * Surges can either be between the two phone line wires or between one or both lines against ground (PE)
 * Surges can be either polarity. The protection adapter handles both.
+
+### What happens on a surge
 
 * If any of these voltages exceeds about 80 V, the first thing to happen is that the respective set of TVS
   diodes (D1 to D6) begins to conduct. The current is about 1 mA at 80 V and will rise steeply with higher voltage.
@@ -61,21 +65,29 @@ Theory of Operation
 * This limits the voltage that reaches the modem / router on the protected port to about 90 to 100 V, which all modems must survive
   to be compliant with the respective telecom standards.
 
+### Fuses
+  
 * If the surge results in much higher current than 2 A for some time, one or both fuses will blow and break the current flow.
 * This is mostly to protect the phone wire, as getting it replaced will probably be more expensive and time consuming than replacing
   a blown modem / router
 * The GDT degrades physically while it conducts. The fuses also act as an indicator for overload conditions. If they should ever blow,
   it is best to replace all components of the surge protection adapter to ensure continued proper operation and low insertion loss
 
+### Surge strength
+  
 * This protection adapter is only intended to protect from surges induced into the phone lines by a lightning strike near the phone lines
 * The fuses are rated for a maximum breaking capability of 60 A at 600 V. A direct lightning strike into the phone line will lead to several
   magnitudes more of current flowing and will not be stopped by the fuses or the rest of the protection adapter. Instead the phone lines will be vaporized, no matter if you have a protection adapter installed or not.
+
+### Effects on the signal
   
 * During regular operation the TBU devices conduct, but introduce about 10 Ω resistance each
 * Phone lines usually have resistances up into the Kiloohm range, so the DSL standards are designed to deal with it
 * But capacitances, combined with the line resistance, act as low-pass filters and degrade the signal
 * So any additional capacitance should be avoided. Special low capacitance diodes are used to employ this.
 * The capacitance of a longer wire between protection adapter and modem would also create such a filter effect
+
+### TVS overload
 
 * The TVS diodes can be damaged when they conduct for longer than a few µs and the TBU does not stop the current, 
   for example because less than 1 A is flowing or the adapter is installed backwards
@@ -93,12 +105,16 @@ Signal degradation
 Procuring Parts and Building
 ----------------------------
 
+### BOM
+
 * All Parts, except the Metz screw terminals, are available at Mouser
 * The Metz screw terminals are available at Digikey and Reichelt
 * The RJ45 from TE can be replaced by a cheaper pin compatible alternative available at LCSC
 * Do not forget to order the case and the pluggable screw terminal (just the socket for it is on the PCB and on the BOM)
 
 [See interactive BOM for details](https://htmlpreview.github.io/?https://github.com/electroniceel/vdsl-surge-protection/blob/master/bom/ibom.html)
+
+### PCBs
 
 * The PCB is designed to fit into a Hammond 1593LBK case
 * There are 3 PCBs: the main PCB and two small PCBs that are used as front panels for the Hammond case
