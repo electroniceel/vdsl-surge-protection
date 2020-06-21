@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Bourns_TBU)(type Legacy)(uri ${KIPRJMOD}/libs/Bourns_TBU.lib)(options "")(descr ""))
+  (lib (name gdt)(type Legacy)(uri ${KIPRJMOD}/libs/gdt.lib)(options "")(descr ""))
+)

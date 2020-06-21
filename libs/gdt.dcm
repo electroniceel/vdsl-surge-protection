@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GDT_2pin
+D Gas discharge tube, 2 pins
+K Gas discharge tube, Overvoltage protection
+$ENDCMP
+#
+$CMP GDT_3pin
+D Gas discharge tube, 3 pins
+K Gas discharge tube, Overvoltage protection
+$ENDCMP
+#
+#End Doc Library
