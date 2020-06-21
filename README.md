@@ -98,7 +98,7 @@ Procuring Parts and Building
 * The RJ45 from TE can be replaced by a cheaper pin compatible alternative available at LCSC
 * Do not forget to order the case and the pluggable screw terminal (just the socket for it is on the PCB and on the BOM)
 
-[See interactive BOM for details](https://github.com/electroniceel/vdsl-surge-protection/raw/master/bom/ibom.html)
+[See interactive BOM for details](https://htmlpreview.github.io/?https://github.com/electroniceel/vdsl-surge-protection/blob/master/bom/ibom.html)
 
 * The PCB is designed to fit into a Hammond 1593LBK case
 * There are 3 PCBs: the main PCB and two small PCBs that are used as front panels for the Hammond case
