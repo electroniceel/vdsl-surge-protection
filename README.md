@@ -1,7 +1,7 @@
 VDSL Surge Protection Adapter
 =============================
 
-
+| [<img src="https://github.com/electroniceel/vdsl-surge-protection/raw/master/photos/board-lowres.jpg" width=450 alt="PCB">](https://github.com/electroniceel/vdsl-surge-protection/raw/master/photos/board.jpg) | [<img src="https://github.com/electroniceel/vdsl-surge-protection/raw/master/photos/case-lowres.jpg" width=387 alt="Case">](https://github.com/electroniceel/vdsl-surge-protection/raw/master/photos/case.jpg) |
 
 
 Overview
